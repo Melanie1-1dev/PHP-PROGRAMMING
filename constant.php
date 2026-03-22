@@ -159,7 +159,18 @@ print_r($GivenArray);
    ?>
 
    <?php 
-   
+   echo "The sum of the first ten numbers are:"."<br><br>";
+ $sum =0;
+   for($i=1;$i<=10;++$i){
+
+   $sum += $i;
+
+   }
+
+   echo "The total sum is equal to :".$sum;
+
     ?>
+
+    
 </body>
 </html>
