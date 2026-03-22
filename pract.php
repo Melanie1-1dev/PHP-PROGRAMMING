@@ -46,10 +46,10 @@ if ($number1 < 5){
  ];
 
  foreach($products as $category => $subcategories){
-    echo "Category: $category <br>";
+    echo "<h3><b>Category: $category </b></h3><br>";
 
     foreach($subcategories as $subcategory =>$items){
-        echo "subcategory: $subcategory <br>";
+        echo "<h3><b>subcategory: $subcategory </b></h3><br>";
 
         foreach($items as $item){
             echo "Item: $item <br>";
