@@ -200,6 +200,26 @@ print_r($GivenArray);
  echo "The highest element in the array is $maxValue";
   ?>
 
+  <br><br><br>
+
+  <?php 
+      $Array = array(20, 30, 5, 70, 90,10);
+      // sorting array in ascending order
+
+      sort($Array);
+
+      // displaying the  sorted array
+
+      echo "The sorted array is in ascending order: ";
+
+      foreach($Array as $Element){
+        echo $Element.", ";
+
+      }
+
+      echo "\n";
+   ?>
+
 
 </body>
 </html>
