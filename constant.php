@@ -82,21 +82,48 @@ $Array = [10,20,4,45,99,99,77];
 
 
 function secondLargest($Array){
-    $uniqueArray = array_unique($Array);
+    $TuniqueArray = array_unique($Array);
 
-    rsort($uniqueArray);
+    rsort($TuniqueArray);
 
-    if(count($uniqueArray)<2){
+    if(count($TuniqueArray)<2){
         return null;
 
     }
     else{
-        return $uniqueArray[1];
+        return $TuniqueArray[1];
     }
 }
 
 echo "The second largest number in array is:" .secondLargest($Array);
 
  ?>
+ <br>
+ <br>
+
+ <?php 
+
+ $GivenArray = [45,35,78,97,56,24,45,26,59,67,88,44,56];
+
+ function thirdLargest($GivenArray){
+    $TuniqueArry = array_unique($GivenArray);
+
+    rsort($TuniqueArry);
+
+    if(count($TuniqueArry)<2){
+        echo "No second largest number in array";
+    }
+    else{
+
+    return  $TuniqueArry[2];
+    
+    
+    }
+ }
+
+print_r($GivenArray);
+
+ echo "The third largest number is:".thirdLargest($GivenArray);
+  ?>
 </body>
 </html>
