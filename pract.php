@@ -31,6 +31,35 @@ if ($number1 < 5){
 
 
     ?>
+
+
+<?php 
+ $products = [
+    "Electronics" => [
+        "phones" => ["iPhone", "Samsung", "Pixel"],
+        "Laptops" => ["Deli", "HP", "MacBook"]
+    ],
+    "Furniture" => [
+        "Chairs" => ["Office Chair", "Gaming Chair"],
+        "Tables" => ["Dinning Table", "Coffee Table"]
+    ]
+ ];
+
+ foreach($products as $category => $subcategories){
+    echo "Category: $category <br>";
+
+    foreach($subcategories as $subcategory =>$items){
+        echo "subcategory: $subcategory <br>";
+
+        foreach($items as $item){
+            echo "Item: $item <br>";
+        }
+    }
+
+    echo "<hr>";
+
+ }
+ ?>
     
 </body>
 </html>
