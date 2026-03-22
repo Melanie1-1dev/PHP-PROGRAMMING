@@ -170,7 +170,36 @@ print_r($GivenArray);
    echo "The total sum is equal to :".$sum;
 
     ?>
+<?php 
+    echo"The pattern of five stars"."<br>";
 
-    
+    for($i=1;$i<=5;$i++){
+        for($j=1;$j<=$i;$j++){
+            echo "*";
+        }
+        echo"<br>";
+    }
+
+    for($i=5;$i>=1;$i--){
+        for($j=1;$j<=$i;$j++){
+            echo "*";
+
+        }
+        echo"<br>";
+    }
+
+
+ ?>
+
+ <?php 
+
+ $Array =array(20, 30, 5, 70, 90, 10);
+
+ $maxValue = max($Array);
+
+ echo "The highest element in the array is $maxValue";
+  ?>
+
+
 </body>
 </html>
