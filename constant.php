@@ -75,5 +75,28 @@ for($r=1;$r<13;$r++){
      ?>
 
 </table>
+<br><br>
+
+<?php 
+$Array = [10,20,4,45,99,99,77];
+
+
+function secondLargest($Array){
+    $uniqueArray = array_unique($Array);
+
+    rsort($uniqueArray);
+
+    if(count($uniqueArray)<2){
+        return null;
+
+    }
+    else{
+        return $uniqueArray[1];
+    }
+}
+
+echo "The second largest number in array is:" .secondLargest($Array);
+
+ ?>
 </body>
 </html>
