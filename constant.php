@@ -19,5 +19,26 @@
     echo "The sum of the number=".$z."<br><br>";
     echo "The sum of the number=".$z=++$x +$y++;
     ?>
+
+
+
+<table width="270px" cellspacing="0px" cellpadding="0px" border="1px">
+</table>
+
+<?php 
+
+for($row=1;$row<=10;$row++){
+    echo"<tr>";
+
+    for($col=1;$col<=10;$col++)
+        {
+            echo"<td>" .($col*$row)."</td>";
+        }
+echo"</tr>";
+
+}
+
+
+ ?>
 </body>
 </html>
