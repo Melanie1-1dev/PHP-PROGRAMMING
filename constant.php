@@ -125,5 +125,41 @@ print_r($GivenArray);
 
  echo "The third largest number is:".thirdLargest($GivenArray);
   ?>
+  <br><br><br>
+
+  <h1>Multiplication table</h1>
+
+  <h3>Enter a number to see its multiplication table</h3>
+
+  <form action="" method="post">
+    
+
+   Number:
+  <input type="number" name="number" required>
+  <input type="submit" name="submit"value="Generate Table">
+  </form>
+
+  <?php 
+
+  if(isset($_POST['submit'])){
+    $num = $_POST['number'];
+
+    echo "<h3> Multiplication Table of $num </h3>";
+    echo "<table border='1' cellpadding='5' cellspacing='0'>";
+
+    for($i=1; $i <= 10;$i++){
+        $result = $num*$i;
+
+        echo "<tr><td>$num x $i = $result </td></tr>";
+    }
+
+    echo "</table>";
+  }
+
+   ?>
+
+   <?php 
+   
+    ?>
 </body>
 </html>
