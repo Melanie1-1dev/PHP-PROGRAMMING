@@ -60,6 +60,22 @@ if ($number1 < 5){
 
  }
  ?>
+
+ <?php 
+ function findSecondLargest($array){
+    $numbers = [20, 35,15,65,85];
+    rsort($numbers);
+
+    $secondLargest = $numbers[1];
+
+    return $secondLargest;
+ }
+
+ findSecondLargest($numbers);
+
+ echo "The secondLargest number in array is:".$secondLargest;
+  ?>
+ 
     
 </body>
 </html>
