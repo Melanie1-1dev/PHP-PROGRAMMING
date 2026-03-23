@@ -62,6 +62,30 @@ if ($number1 < 5){
  ?>
 
  <?php 
+ $sum = 0;
+ for($num =0;$num<=20;$num++){
+    if($num%2==0){
+        $sum +=$num;
+
+    }
+ }
+
+ echo "The sum is:".$sum;
+
+
+ function reverseArray($numbers){
+    $reversedArray = array_reverse($numbers);
+
+    return $reversedArray;
+ }
+
+ reverseArray($numbers);
+
+ echo "The reversed array:".$reversedArray;
+  ?>
+  <br><br>
+
+ <?php 
  function findSecondLargest($array){
     $numbers = [20, 35,15,65,85];
     rsort($numbers);
@@ -71,7 +95,7 @@ if ($number1 < 5){
     return $secondLargest;
  }
 
- findSecondLargest($numbers);
+ findSecondLargest($array);
 
  echo "The secondLargest number in array is:".$secondLargest;
   ?>
