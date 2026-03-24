@@ -99,6 +99,10 @@ if ($number1 < 5){
 
  echo "The secondLargest number in array is:".$secondLargest;
   ?>
+
+  <?php 
+  echo "The php running;";
+   ?>
  
     
 </body>
